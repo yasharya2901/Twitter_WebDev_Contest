@@ -2,13 +2,14 @@
 
 let charLength = document.querySelector("#char-count");
 let tweet_content_posting = "";
-
 setInterval(() => {
     let tweet_content = document.getElementById("tweet-content").value;
     tweet_content_posting = tweet_content;
     charLength.innerText = tweet_content.length;
 }, 100)
 
+
+console.log("hello" + tweet_content_posting)
 
 
 
@@ -38,15 +39,15 @@ document.querySelector("#post-button").onclick = () => {
                 <p id="tweet-text">
                     ${tweet_content_posting}
                 </p>
-            </div>
-            <div class="lower">
-                <div class="tweet-lower-buttons">
-                    <button id="comment">
-                        <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/026/original/comment.png?1706888619" alt="comment">
-                    </button>
-                    <button id="heart">
-                        <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/029/original/heart.png?1706888679" alt="heart">
-                    </button>
+                <div class="lower">
+                    <div class="tweet-lower-buttons">
+                        <button id="comment">
+                            <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/026/original/comment.png?1706888619" alt="comment">
+                        </button>
+                        <button id="heart">
+                            <img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/064/029/original/heart.png?1706888679" alt="heart">
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
